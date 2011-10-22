@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Arnold Noronha}]
   s.date = %q{2011-10-22}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Get a ruby backtrace from within gdb}
   s.email = %q{arnstein87@gmail.com}
   s.extensions = [%q{ext/extconf.rb}]
   s.extra_rdoc_files = [
@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
     "ext/extconf.rb",
     "ext/gdbc.c",
     "lib/ruby-gdb-backtrace.rb",
+    "ruby-gdb-backtrace.gemspec",
     "test/helper.rb",
     "test/test_ruby-gdb-backtrace.rb"
   ]
@@ -35,7 +36,7 @@ Gem::Specification.new do |s|
   s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.5}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Get a ruby backtrace from within gdb}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

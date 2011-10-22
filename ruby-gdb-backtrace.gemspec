@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "ext/extconf.rb",
-    "ext/gdbc.c",
+    "ext/ruby_gdb_helper.c",
     "lib/ruby-gdb-backtrace.rb",
     "ruby-gdb-backtrace.gemspec",
     "test/helper.rb",

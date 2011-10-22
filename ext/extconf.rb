@@ -3,7 +3,7 @@
 require 'mkmf'
 
 # Give it a name
-extension_name = 'gdbc'
+extension_name = 'ruby-gdb-helper'
 
 # The destination
 dir_config(extension_name)

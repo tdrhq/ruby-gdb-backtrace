@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "ruby-gdb-backtrace"
   gem.homepage = "http://github.com/tdrhq/ruby-gdb-backtrace"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Get a ruby backtrace from within gdb}
+  gem.description = %Q{Get a ruby backtrace from within gdb}
   gem.email = "arnstein87@gmail.com"
   gem.authors = ["Arnold Noronha"]
   # dependencies defined in Gemfile

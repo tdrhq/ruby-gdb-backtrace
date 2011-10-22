@@ -1,1 +1,1 @@
-require "lib/gdbc/gdbc"
+require "ruby_gdb_helper"

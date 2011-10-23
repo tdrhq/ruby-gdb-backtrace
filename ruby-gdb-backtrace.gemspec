@@ -9,10 +9,10 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Arnold Noronha}]
-  s.date = %q{2011-10-22}
+  s.date = %q{2011-10-23}
   s.description = %q{Get a ruby backtrace from within gdb}
   s.email = %q{arnstein87@gmail.com}
-  s.extensions = [%q{ext/extconf.rb}]
+  s.extensions = [%q{ext/ruby_gdb_helper/extconf.rb}]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -25,8 +25,8 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "ext/extconf.rb",
-    "ext/ruby_gdb_helper.c",
+    "ext/ruby_gdb_helper/extconf.rb",
+    "ext/ruby_gdb_helper/ruby_gdb_helper.c",
     "lib/ruby-gdb-backtrace.rb",
     "ruby-gdb-backtrace.gemspec",
     "test/helper.rb",
@@ -46,17 +46,20 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
+      s.add_development_dependency(%q<rake-compiler>, [">= 0"])
     else
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_dependency(%q<rcov>, [">= 0"])
+      s.add_dependency(%q<rake-compiler>, [">= 0"])
     end
   else
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
     s.add_dependency(%q<rcov>, [">= 0"])
+    s.add_dependency(%q<rake-compiler>, [">= 0"])
   end
 end
 

@@ -56,3 +56,4 @@ require 'rake/extensiontask'
 
 Rake::ExtensionTask.new('ruby_gdb_helper', eval(File.new("ruby-gdb-backtrace.gemspec").read))
 
+task :test => :compile

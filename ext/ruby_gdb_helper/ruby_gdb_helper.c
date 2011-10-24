@@ -10,7 +10,7 @@ gdbc_get_string(VALUE s) {
 /* version for testing from ruby */
 VALUE
 rb_ruby_gdb_backtrace() {
-  rb_eval_string("begin; raise 'nowhere'; rescue Exception => e; e.backtrace.join('\n'); end");
+  return rb_eval_string("begin; raise 'nowhere'; rescue Exception => e; e.backtrace.join('\n'); end");
 }
 
 
@@ -23,6 +23,9 @@ ruby_gdb_backtrace() {
 
 // The initialization method for this module
 void Init_ruby_gdb_helper() {
+  VALUE cRubyGdb;
   ruby_gdb_helper = rb_define_module("ruby_gdb_helper");
-  rb_define_singleton_method("ruby_gdb_backtrace", ruby_gdb_backtrace, 0)
+
+  cRubyGdb = rb_eval_string("RubyGdbBacktrace");
+  rb_define_singleton_method(cRubyGdb, "get", rb_ruby_gdb_backtrace, 0);
 }
